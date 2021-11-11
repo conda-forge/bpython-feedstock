@@ -10,7 +10,7 @@ source:
   sha256: 6e7738806013b469be57b0117082b9c4557ed7c92c70ceb79f96d674d89c7503
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - bpython = bpython.curtsies:main
     - bpython-curses = bpython.cli:main
