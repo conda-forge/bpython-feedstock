@@ -10,7 +10,7 @@ source:
   sha256: 9f0078abc887c48af088691e2f64797d6ca994ac0f4bc03c38d06f657d7c052a
 
 build:
-  number: 2
+  number: 1
   entry_points:
     - bpython = bpython.curtsies:main
     - bpython-curses = bpython.cli:main
@@ -25,11 +25,11 @@ requirements:
     - pip
     - python
   run:
-    - curtsies >=0.4
+    - curtsies >=0.3.5
     - cwcwidth
     - greenlet
     - pygments
-    - python >=3.7
+    - python
     - pyxdg
     - requests
 
