@@ -1,5 +1,5 @@
 {% set name = "bpython" %}
-{% set version = "0.23" %}
+{% set version = "0.24" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9f0078abc887c48af088691e2f64797d6ca994ac0f4bc03c38d06f657d7c052a
+  sha256: 98736ffd7a8c48fd2bfb53d898a475f4241bde0b672125706af04d9d08fd3dbd
 
 build:
-  number: 2
+  number: 0
   entry_points:
     - bpython = bpython.curtsies:main
     - bpython-curses = bpython.cli:main
