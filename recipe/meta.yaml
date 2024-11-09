@@ -26,8 +26,9 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - pip
     - python
+    - pip
+    - setuptools
   run:
     - curtsies >=0.4
     - cwcwidth
