@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 98736ffd7a8c48fd2bfb53d898a475f4241bde0b672125706af04d9d08fd3dbd
 
 build:
-  number: 2
+  number: 3
   entry_points:
     - bpython = bpython.curtsies:main
     - bpython-curses = bpython.cli:main
