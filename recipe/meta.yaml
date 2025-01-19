@@ -29,6 +29,8 @@ requirements:
     - pip
     - setuptools
   run:
+    - python
+
     - curtsies >=0.4
     - cwcwidth
     - greenlet
