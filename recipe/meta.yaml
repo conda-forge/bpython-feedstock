@@ -13,13 +13,12 @@ build:
   number: 0
   entry_points:
     - bpython = bpython.curtsies:main
-    - bpython-curses = bpython.cli:main
     - bpython-urwid = bpython.urwid:main
     - bpdb = bpdb:main
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py2k]
   skip: true  # [win]
-  skip: true  # [py<37]
+  skip: true  # [py<38]
 
 requirements:
   build:
@@ -34,27 +33,23 @@ requirements:
     - cwcwidth
     - greenlet
     - pygments
-    - python
     - pyxdg
     - requests
-
-    # may removed by 0.24. https://github.com/bpython/bpython/issues/940
-    - typing_extensions
+    - typing_extensions  # [py<311]
 
     - urwid  # [unix]
     - watchdog
 
 test:
   imports:
-    - bpdb
     - bpython
     - bpython.curtsiesfrontend
     - bpython.test
     - bpython.test.fodder
     - bpython.translations
+    - bpdb
   commands:
     - bpython --help
-    - bpython-curses --help
     - bpython-urwid --help
     - bpdb --help
 
