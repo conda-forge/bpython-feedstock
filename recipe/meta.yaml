@@ -39,7 +39,7 @@ requirements:
     - requests
     - typing_extensions  # [py<311]
 
-    - urwid  # [unix]
+    - urwid <3.0  # [unix]
     - watchdog
 
 test:
