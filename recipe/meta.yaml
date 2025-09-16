@@ -10,7 +10,7 @@ source:
   sha256: c246fc909ef6dcc26e9d8cb4615b0e6b1613f3543d12269b19ffd0782166c65b
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - bpython = bpython.curtsies:main
     - bpython-urwid = bpython.urwid:main
