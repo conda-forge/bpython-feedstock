@@ -53,7 +53,7 @@ test:
     - bpdb
   commands:
     - bpython --help
-    - bpython-urwid --help # [unix and py<314]
+    - bpython-urwid --help  # [unix and py<314]
     - bpdb --help
 
 about:
