@@ -1,5 +1,5 @@
 {% set name = "bpython" %}
-{% set version = "0.25" %}
+{% set version = "0.26" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c246fc909ef6dcc26e9d8cb4615b0e6b1613f3543d12269b19ffd0782166c65b
+  sha256: f79083e1e3723be9b49c9994ad1dd3a19ccb4d0d4f9a6f5b3a73bef8bc327433
 
 build:
   number: 0
