@@ -39,7 +39,8 @@ requirements:
     - requests
     - typing_extensions  # [py<311]
 
-    - urwid  # [unix]
+    # see https://github.com/bpython/bpython/issues/1043
+    - urwid <3.0  # [unix and py<314]
     - watchdog
 
 test:
@@ -52,7 +53,7 @@ test:
     - bpdb
   commands:
     - bpython --help
-    - bpython-urwid --help
+    - bpython-urwid --help  # [unix and py<314]
     - bpdb --help
 
 about:
